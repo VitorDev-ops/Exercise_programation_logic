@@ -1,0 +1,463 @@
+1. Escreva um algoritmo em Portugol que declare uma variável do tipo inteiro chamada idade, atribua o valor 10 a ela, e depois mostre o valor na tela com escreva().
+
+   programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idade = 10
+
+		escreva("Sua idade é: " + "\n" + idade)
+	}
+}
+
+CONSOLE:
+  Sua idade é:
+  10
+
+2. Crie um algoritmo com uma variável do tipo real chamada peso, atribua o valor 42.5, e escreva na tela a frase "O peso é: " seguida do valor.
+
+   programa
+{
+	
+	funcao inicio()
+	{
+		real peso = 42.5
+
+		escreva("Seu peso é:  " + peso)
+	}
+}
+
+CONSOLE:
+  Seu peso é:  42.5
+
+3. Declare uma variável do tipo caractere chamada cidade, atribua o nome da sua cidade (entre aspas) e depois mostre essa informação na tela.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+		caracter inicial_cidade_um = 'S'
+		caracter inicial_cidade_dois = 'P'
+
+		escreva("Sua cidade é:  " + inicial_cidade_um + inicial_cidade_dois)
+	}
+}
+
+obs: Criei uma abreviação de São Paulo pois, para escrever por completo a cidade, teria que usar uma variável do tipo cadeia.
+
+
+
+CONSOLE:
+  Sua cidade é: SP
+
+4. Crie uma variável do tipo logico chamada chovendo, atribua o valor falso a ela e escreva o resultado na tela.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+		logico chovendo = falso
+
+		escreva("Está chovendo hoje. verdadeiro ou falso?:  " + chovendo)
+	}
+}
+
+CONSOLE:
+  Está chovendo hoje. verdadeiro ou falso?: false
+
+5. Complete a lacuna: em Portugol, qual tipo de variável você usaria para guardar cada uma dessas informações? Justifique com uma frase curta para cada:
+•	a) o número de alunos de uma turma
+
+    R: Uma variável do tipo inteiro, pois é o numero de pessoas dentro de uma sala ou seja, um valor inteiro.
+
+•	b) a altura de uma pessoa
+
+    R: Uma variável do tipo real, pois a maioria das pessoas não tem uma aoltura inteira como exemplo 2 metros. o mais comum é 2 metros e 10,20,30 e etc.
+
+•	c) o nome de um produto
+
+    R: Uma varável do tipo cadeia, pois, se trata de mais de um caracter.
+
+•	d) se um usuário está logado ou não
+
+    R: Poderia usar uma variável do tipo logico junto com uma função se. exemplo:
+
+        programa
+{
+	
+	funcao inicio()
+	{
+		cadeia user
+		logico i 
+
+		escreva("Você está aí ainda? por favor re-digite seu nome de usuário:  ")
+		leia(user)
+
+		se (user == "s_menor"){
+
+			i = verdadeiro
+			escreva(i + "  Acesso liberado")
+			
+			}senao{
+				i = falso
+				escreva(i + "  Acesso negado")
+				
+				}
+		           
+		
+	}
+}
+
+6. Escreva um algoritmo que declare uma constante chamada DESCONTO com valor 0.1 (10%), leia o preço de um produto digitado pelo usuário, calcule o valor com desconto e mostre o resultado.
+
+
+  programa
+{
+	
+	funcao inicio()
+	{
+		real preco
+		const real desconto = 0.1
+		real calculo
+
+		 escreva("Qual o preço do produto? :" + "\n")
+		 leia(preco)
+
+		 calculo = preco - (preco * desconto)
+
+		 escreva("O novo preço do produto é :" + "\n" + calculo + "!")
+		 
+
+		      
+		
+	}
+}
+
+CONSOLE:
+  Qual o preço do produto? :
+  100.00
+  O novo preço do produto é :
+  90.0!
+
+7. Crie um algoritmo que leia dois números inteiros digitados pelo usuário e mostre na tela a soma, a subtração, a multiplicação e a divisão entre eles.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro n1
+ 		inteiro n2
+
+
+ 		escreva("Primeiro numero : ")
+ 		leia(n1)
+
+ 		escreva("Segundo numero : ")
+ 		leia(n2)
+
+ 		escreva("A soma dos numeros é : "+ (n1 + n2) + "\n")
+ 		escreva("A subtração dos numeros é : "+ (n1 - n2) + "\n")
+ 		escreva("A divisão dos numeros é : "+ (n1 / n2)+ "\n")
+ 		escreva("A multiplicação dos numeros é : "+ (n1 * n2)+ "\n")
+ 		
+			      
+		
+	}
+}
+
+CONSOLE:
+    Primeiro numero : 10
+    Segundo numero : 10
+    A soma dos numeros é : 20
+    A subtração dos numeros é : 0
+    A divisão dos numeros é : 1
+    A multiplicação dos numeros é : 100
+
+8. Escreva um algoritmo que calcule a área de um retângulo. O programa deve ler a base e a altura (variáveis do tipo real) e mostrar a área calculada
+
+        programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro base
+ 		inteiro altura
+ 		inteiro area
+
+ 		escreva("Qual o tamanho da base? ")
+ 		leia(base)
+
+ 		escreva("Qual o tamanho da altura? ")
+ 		leia(altura)
+
+ 		area = base * altura
+
+ 		escreva("A area do retangulo é "+ area)
+ 		
+	      
+		
+	}
+}
+
+CONSOLE:
+Qual o tamanho da base? 10
+Qual o tamanho da altura? 5
+A area do retangulo é 50
+
+9. Um professor quer calcular a média final de um aluno, que é composta por 3 notas de peso igual. Crie um algoritmo que leia as 3 notas e escreva a média na tela.
+
+        programa
+{
+	
+	funcao inicio()
+	{
+ 		real nota1, nota2, nota3, media
+
+	   escreva("Digite a primeira nota: ")
+	   leia(nota1)
+	   
+	   escreva("Digite a segunda nota: ")
+	   leia(nota2)
+	   
+	   escreva("Digite a terceira nota: ")
+	   leia(nota3)
+	   
+	   media = (nota1 + nota2 + nota3) / 3
+	   
+	   escreva("A média final do aluno é: " + media)
+		
+	}
+}
+
+CONSOLE:
+Digite a primeira nota: 10
+Digite a segunda nota: 10
+Digite a terceira nota: 10
+A média final do aluno é: 10.0
+
+
+10. Crie um algoritmo que leia a idade de uma pessoa e mostre "Maior de idade" se for maior ou igual a 18, ou "Menor de idade" caso contrário.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro idade
+
+ 		escreva("Qual a sua idade?  ")
+ 		leia(idade)
+
+ 		se (idade >=18){
+ 			escreva("Maior de idade")
+ 			}senao{
+ 				escreva("menor de idade")
+ 				}
+		
+	}
+}
+
+CONSOLE:
+Qual a sua idade?  15
+menor de idade
+
+
+11. Escreva um algoritmo que leia um número e informe se ele é par ou ímpar (dica: use o operador mod, lembrando que um número é par quando o resto da divisão por 2 é igual a 0).
+
+        programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro num
+
+ 		escreva("Informe um numero: ")
+ 		leia(num)
+
+ 		se (num %2 == 0){
+ 			escreva(num + "  É um numero par!")
+ 			}senao{
+ 				escreva(num + "  É um numero impar!")
+ 				}
+		
+	}
+}
+
+CONSOLE:
+Informe um numero: 9
+9  É um numero impar!
+
+12. Crie um algoritmo que leia o valor de uma compra e aplique um desconto usando as seguintes condições: se o valor for maior que R$ 200, aplique 15% de desconto; senão, aplique 5% de desconto. O programa deve mostrar o valor final com o desconto já aplicado.
+
+        programa
+{
+	
+	funcao inicio()
+	{
+ 		real preco
+ 		const  real desconto = 0.15, desconto2 = 0.05
+ 		
+
+ 		escreva("Digite o preço do produto:  ")
+ 		leia(preco)
+
+ 		real ajuste1 = preco - (preco*desconto2)
+ 		real ajuste2 = preco - (preco*desconto)
+
+ 		se (preco <= 200.00){
+ 			escreva("Parabéns, você rebeu 5% de desconto no valor total, ficando: " + ajuste1)
+ 			}senao se (preco > 200.00){
+ 				escreva("Uau, pela compra acima de 200R$ você recebeu um desconte do 15% ficando: " + ajuste2)
+ 				}
+
+ 			
+	}
+}
+
+CONSOLE:
+Digite o preço do produto:  100
+Parabéns, você rebeu 5% de desconto no valor total, ficando: 95.0
+
+13. Escreva um algoritmo que leia três números diferentes e mostre qual deles é o maior (dica: você pode usar condicionais aninhados, um se dentro do outro).
+
+        programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro n1, n2, n3
+
+ 		escreva("digite três numeros; "+ "\n")
+ 		leia(n1, n2, n3)
+
+ 		logico x1 = n1>n2 e n1>n3
+ 		logico x2 = n2>n1 e n2>n3
+ 		logico x3 = n3>n2 e n3>n1
+
+ 		se(x1 == verdadeiro){
+ 			escreva("O numero "+ n1 + " é o maior dos três!")
+ 			}senao se(x2 == verdadeiro){
+ 			escreva("O numero "+ n2 + " é o maior dos três!")
+ 			}senao{
+ 			escreva("O numero "+ n3 + " é o maior dos três!")
+ 				}
+ 				
+	}
+}
+
+CONSOLE:
+digite três numeros; 
+10
+11
+1
+O numero 11 é o maior dos três!
+
+14. Crie um algoritmo que use o comando para para mostrar na tela todos os números de 1 a 20.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+ 		inteiro i
+
+ 		para(i = 1; i <=20; i++){
+ 			escreva(i + "\n")
+ 			}
+ 				
+	}
+}
+
+CONSOLE:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+
+15. Um professor quer saber quantos alunos de uma turma foram aprovados. Crie um algoritmo que: use um laço para para ler a média de 5 alunos, um de cada vez; use um se dentro do laço para verificar se a média é maior ou igual a 6 (aprovado); conte, em uma variável, quantos alunos foram aprovados; e ao final do laço, mostre o total de aprovados na tela.
+
+    programa
+{
+	
+	funcao inicio()
+	{
+ 		real a1, a2, a3, a4, media
+ 		inteiro contador
+ 		inteiro soma = 0
+ 		
+
+ 		para(contador = 1; contador <=5; contador++){
+ 			escreva("Insira a nota do " + contador + " aluno " + "\n")
+ 			leia(a1,a2,a3,a4)
+ 			media = (a1+a2+a3+a4)/4
+ 			se(media >= 6.0){
+ 				soma = soma + 1
+ 				
+ 				escreva("APROVADO" + "\n")
+ 				}senao{
+ 					
+ 					escreva("REPROVADO" + "\n")
+ 					}
+ 			
+ 			}
+
+ 				
+ 				escreva("total de aprovados : " + soma)
+	
+ 			
+	}
+ 				
+}
+
+CONSOLE:
+Insira a nota do 1 aluno 
+9.0
+10.0
+7.0
+6.0
+APROVADO
+Insira a nota do 2 aluno 
+6.0
+4.0
+2.0
+2.0
+REPROVADO
+Insira a nota do 3 aluno 
+3.0
+10.0
+10.0
+10.0
+APROVADO
+Insira a nota do 4 aluno 
+9.0
+5.0
+6.5
+10.0
+APROVADO
+Insira a nota do 5 aluno 
+1.0
+2.0
+1.0
+10.0
+REPROVADO
+total de aprovados : 3
